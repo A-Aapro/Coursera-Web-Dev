@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Fauna One', serif;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+h1 {
+  font-family: Cinzel, serif;
+  font-size: 175%;
+  text-align: center;
+}
+
+.container{
+  border: 1px solid black;
+  background-color: #cbffbd;
+  color: black;
+  margin: 10px;
+}
+
+.menu-1, .menu-2, .menu-3 {
+  display: block;
+  float: right;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 125%;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #1a160d;
+}
+
+.menu-1{
+  background-color: #ffd7a8;
+}
+.menu-2{
+  background-color: #a8caff;
+}
+.menu-3{
+  background-color: #ffa8ee;
+}
+
+p {
+  clear: right;
+  padding: 10px;
+  font-size: 100%;
+
+}
+
+
+/* Styles for desktop */
+@media (min-width: 992px) { 
+
+ h1 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+ .wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.container{
+  display: block;
+  float: left;
+  width: 30%;
+}
+
+}
+
+/* Styles for tablet */
+@media (min-width: 768px) and (max-width: 991px) { 
+  
+    h1 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    }
+
+   .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    }
+
+    .col-1, .col-2{
+    display: inline-block;
+    width: 45%;
+    flex-grow: 1;
+    }
+
+   .col-3{
+    display: block;
+    flex-grow: 2;
+    margin-bottom: 5%;
+    }
+
+ }
+
+/* Styles for mobile */
+@media (max-width: 767px) {
+
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .container{
+    display: block;
+  }
+}
