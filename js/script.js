@@ -26,7 +26,6 @@ var menuItemHtml = "snippets/menu-item.html";
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
-  console.log("INSERT: " + html);
   targetElem.innerHTML = html;
 
 };
